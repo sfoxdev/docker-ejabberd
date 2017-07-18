@@ -1,0 +1,3 @@
+{lookup,["file","native"]}.
+{host,{127,0,0,1}, ["localhost","example.com"]}.
+{file, resolv, "/etc/resolv.conf"}.
