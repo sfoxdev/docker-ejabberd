@@ -1,7 +1,5 @@
-
 FROM debian:jessie
-
-MAINTAINER SFox Lviv <sfox.lviv@gmail.com>
+MAINTAINER SFoxDev <admin@sfoxdev.com>
 
 ENV EJABBERD_BRANCH=17.04 \
     EJABBERD_USER=ejabberd \
@@ -110,6 +108,7 @@ USER $EJABBERD_USER
 WORKDIR $EJABBERD_HOME
 
 VOLUME ["$EJABBERD_HOME/database", "$EJABBERD_HOME/ssl", "$EJABBERD_HOME/backup", "$EJABBERD_HOME/upload"]
+
 EXPOSE 4560 5222 5269 5280 5443
 
 CMD ["start"]
