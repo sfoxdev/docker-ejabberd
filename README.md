@@ -14,7 +14,7 @@ eJabberd XMPP server
 docker run -d -u root -p 4560:4560 -p 5222:5222 -p 5269:5269 -p 5280:5280 -p 5443:5443 --net=prosody_network --name example.com sfoxdev/ejabberd
 ```
 
-### If you forget adminpassword you can change it
+### If you forget admin password you can change it
 ```
 docker exec -it example.com /bin/bash
 # erl
